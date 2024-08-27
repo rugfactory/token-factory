@@ -1,3 +1,9 @@
+# 🚨 **Deprecated** 🚨
+
+> Please use instead our [factory example](https://github.com/near-examples/factory-rust)
+
+----
+
 # Token Farm
 
 Issue your own token and without touching a line of code. Use the advanced UI features including image processing and integer rounding techniques to create and issue the most sophisticated fungible tokens.
