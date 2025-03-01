@@ -8,6 +8,7 @@ popd
 
 pushd factory
 ./build.sh
+wasm-opt factory/res/token_factory.wasm -O4 -o factory/res/token_factory.wasm
 popd
 
 
