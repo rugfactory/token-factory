@@ -31,7 +31,7 @@ near call rtkn.testnet create_token '{
     "total_supply": "1000000000000000000000000000",
     "owner_id": "YOUR_ACCOUNT.testnet"
   }
-}' --accountId YOUR_ACCOUNT.testnet
+}' --accountId YOUR_ACCOUNT.testnet --gas 300000000000000
 ```
 
 ## Mainnet Token Creation
@@ -51,7 +51,7 @@ near call rtkn.near create_token '{
     "total_supply": "1000000000000000000000000000",
     "owner_id": "YOUR_ACCOUNT.near"
   }
-}' --accountId YOUR_ACCOUNT.near
+}' --accountId YOUR_ACCOUNT.near --gas 300000000000000
 ```
 
 ## Important Notes
