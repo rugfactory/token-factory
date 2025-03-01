@@ -6,12 +6,12 @@ Before creating a token, you need to deposit storage fees. Use these commands:
 
 For testnet:
 ```bash
-near call rtkn.testnet storage_deposit '' --accountId YOUR_ACCOUNT.testnet --amount 1
+near call rtkn.testnet storage_deposit '{}' --accountId YOUR_ACCOUNT.testnet --deposit 10
 ```
 
 For mainnet:
 ```bash
-near call rtkn.near storage_deposit '' --accountId YOUR_ACCOUNT.near --amount 1
+near call rtkn.near storage_deposit '{}' --accountId YOUR_ACCOUNT.near --deposit 10
 ```
 
 ## Testnet Token Creation
@@ -37,4 +37,5 @@ near call rtkn.near create_token '{"owner_id": "YOUR_ACCOUNT.near", "total_suppl
 3. Customize the token `name` and `symbol` according to your requirements
 4. The `decimals` value can be modified (default is 18)
 5. Make sure you have enough NEAR balance for deployment fees
-6. Storage deposit (1 NEAR) is required before creating any tokens
+6. Storage deposit (10 NEAR) is required before creating any tokens
+7. You can withdraw your storage deposit when you no longer need it
