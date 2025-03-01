@@ -10,13 +10,10 @@ this repo is a fork of [https://github.com/near-examples/token-factory](https://
 
 RUGACTORY TOKEN FACTORY :: DEPLOYMENTS
 
-factory
+rtkn
 - rtkn.testnet
 - rtkn.near
 
-rugfactory
-- rugfactory.testnet
-- rugfactory.near
 
 
 ----
