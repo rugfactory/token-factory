@@ -55,14 +55,14 @@ near call rtkn.near storage_deposit '' --accountId YOUR_ACCOUNT.near --amount 1
 
 For testnet:
 ```bash
-NEAR_ARGS='{"owner_id": "YOUR_ACCOUNT.testnet", "total_supply": "1000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "Example Token", "symbol": "EXMPL", "icon": null, "reference": null, "reference_hash": null, "decimals": 18 }}'
+NEAR_ARGS='{"owner_id": "YOUR_ACCOUNT.testnet", "total_supply": "1000000000000000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "Example Token", "symbol": "EXMPL", "icon": null, "reference": null, "reference_hash": null, "decimals": 18 }}'
 
 near call rtkn.testnet create_token "$NEAR_ARGS" --accountId YOUR_ACCOUNT.testnet
 ```
 
 For mainnet:
 ```bash
-NEAR_ARGS='{"owner_id": "YOUR_ACCOUNT.near", "total_supply": "1000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "Example Token", "symbol": "EXMPL", "icon": null, "reference": null, "reference_hash": null, "decimals": 18 }}'
+NEAR_ARGS='{"owner_id": "YOUR_ACCOUNT.near", "total_supply": "1000000000000000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "Example Token", "symbol": "EXMPL", "icon": null, "reference": null, "reference_hash": null, "decimals": 18 }}'
 
 near call rtkn.near create_token "$NEAR_ARGS" --accountId YOUR_ACCOUNT.near
 ```
@@ -100,3 +100,4 @@ near view rtkn.near get_token '{"token_id": "exmpl"}'
 3. Token symbols must be lowercase alphanumeric characters only
 4. Each token will be deployed as a sub-account of rtkn (e.g., `exmpl.rtkn.testnet` or `exmpl.rtkn.near`)
 5. Make sure to have enough NEAR balance for storage and deployment fees
+6. The total_supply is set to 1 billion tokens (1,000,000,000). With 18 decimals, this becomes 1000000000000000000000000000 (1 billion * 10^18)
