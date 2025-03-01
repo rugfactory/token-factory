@@ -1,6 +1,6 @@
 # WebAssembly Optimization and Conversion Guide
 
-> This was an experiment at size optimization. The optimized token factory still outputs the regular token size,
+> This was an experiment at size optimization. The optimized token factory still outputs the regular token size, so will have to build optimized token contract before building optimized factory.
 
 ## Installation Instructions
 
