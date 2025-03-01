@@ -61,7 +61,7 @@ wasm-opt contracts/factory/res/token_factory.wasm -O4 -o optimized/token_factory
 ### Optimize Token Contract
 
 ```bash
-wasm-opt contracts/token/res/token.wasm -O4 -o optimized/token.wasm
+wasm-opt contracts/token/res/fungible_token.wasm -O4 -o optimized/token.wasm
 ```
 
 Optimization flags:
@@ -80,7 +80,7 @@ wasm2wat contracts/factory/res/token_factory.wasm -o optimized/token_factory.wat
 
 For Token Contract:
 ```bash
-wasm2wat contracts/token/res/token.wasm -o optimized/token.wat
+wasm2wat contracts/token/res/fungible_token.wasm -o optimized/token.wat
 ```
 
 ### Convert WAT back to WASM

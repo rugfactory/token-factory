@@ -1,0 +1,12 @@
+# converting comiled rust wasm to wat
+# and backagain was a good idea
+# but it did not result in samller files
+# wasm-opt worked better
+
+# factory wat
+token_factory.wat
+token_factory_converted.wasm
+
+# token wat
+token.wat
+token_converted.wasm
