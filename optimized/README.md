@@ -1,5 +1,7 @@
 # WebAssembly Optimization and Conversion Guide
 
+> This was an experiment at size optimization. The optimized token factory still outputs the regular token size,
+
 ## Installation Instructions
 
 ### Install WebAssembly Binary Toolkit (wabt)
