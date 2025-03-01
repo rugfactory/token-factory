@@ -19,7 +19,19 @@ near call rtkn.near storage_deposit '{}' --accountId YOUR_ACCOUNT.near --deposit
 To create a new token on testnet, use this command:
 
 ```bash
-near call rtkn.testnet create_token '{"owner_id": "YOUR_ACCOUNT.testnet", "total_supply": "1000000000000000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "Example Token", "symbol": "EXMPL", "icon": null, "reference": null, "reference_hash": null, "decimals": 18 }}' --accountId YOUR_ACCOUNT.testnet
+near call rtkn.testnet create_token '{
+  "args": {
+    "metadata": {
+      "icon": null,
+      "name": "Example Token",
+      "symbol": "EXMPL",
+      "decimals": 18,
+      "spec": "ft-1.0.0"
+    },
+    "total_supply": "1000000000000000000000000000",
+    "owner_id": "YOUR_ACCOUNT.testnet"
+  }
+}' --accountId YOUR_ACCOUNT.testnet
 ```
 
 ## Mainnet Token Creation
@@ -27,7 +39,19 @@ near call rtkn.testnet create_token '{"owner_id": "YOUR_ACCOUNT.testnet", "total
 To create a new token on mainnet, use this command:
 
 ```bash
-near call rtkn.near create_token '{"owner_id": "YOUR_ACCOUNT.near", "total_supply": "1000000000000000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "Example Token", "symbol": "EXMPL", "icon": null, "reference": null, "reference_hash": null, "decimals": 18 }}' --accountId YOUR_ACCOUNT.near
+near call rtkn.near create_token '{
+  "args": {
+    "metadata": {
+      "icon": null,
+      "name": "Example Token",
+      "symbol": "EXMPL",
+      "decimals": 18,
+      "spec": "ft-1.0.0"
+    },
+    "total_supply": "1000000000000000000000000000",
+    "owner_id": "YOUR_ACCOUNT.near"
+  }
+}' --accountId YOUR_ACCOUNT.near
 ```
 
 ## Important Notes
