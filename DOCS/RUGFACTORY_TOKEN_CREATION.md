@@ -1,4 +1,4 @@
-# Creating Tokens with Rugfactory
+# Creating Tokens with rtkn
 
 ## Storage Deposit
 
@@ -6,12 +6,12 @@ Before creating a token, you need to deposit storage fees. Use these commands:
 
 For testnet:
 ```bash
-near call rugfactory.testnet storage_deposit '' --accountId YOUR_ACCOUNT.testnet --amount 1
+near call rtkn.testnet storage_deposit '' --accountId YOUR_ACCOUNT.testnet --amount 1
 ```
 
 For mainnet:
 ```bash
-near call rugfactory.near storage_deposit '' --accountId YOUR_ACCOUNT.near --amount 1
+near call rtkn.near storage_deposit '' --accountId YOUR_ACCOUNT.near --amount 1
 ```
 
 ## Testnet Token Creation
@@ -19,7 +19,7 @@ near call rugfactory.near storage_deposit '' --accountId YOUR_ACCOUNT.near --amo
 To create a new token on testnet, use this command:
 
 ```bash
-near call rugfactory.testnet create_token '{"owner_id": "YOUR_ACCOUNT.testnet", "total_supply": "1000000000000000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "Example Token", "symbol": "EXMPL", "icon": null, "reference": null, "reference_hash": null, "decimals": 18 }}' --accountId YOUR_ACCOUNT.testnet
+near call rtkn.testnet create_token '{"owner_id": "YOUR_ACCOUNT.testnet", "total_supply": "1000000000000000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "Example Token", "symbol": "EXMPL", "icon": null, "reference": null, "reference_hash": null, "decimals": 18 }}' --accountId YOUR_ACCOUNT.testnet
 ```
 
 ## Mainnet Token Creation
@@ -27,7 +27,7 @@ near call rugfactory.testnet create_token '{"owner_id": "YOUR_ACCOUNT.testnet", 
 To create a new token on mainnet, use this command:
 
 ```bash
-near call rugfactory.near create_token '{"owner_id": "YOUR_ACCOUNT.near", "total_supply": "1000000000000000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "Example Token", "symbol": "EXMPL", "icon": null, "reference": null, "reference_hash": null, "decimals": 18 }}' --accountId YOUR_ACCOUNT.near
+near call rtkn.near create_token '{"owner_id": "YOUR_ACCOUNT.near", "total_supply": "1000000000000000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "Example Token", "symbol": "EXMPL", "icon": null, "reference": null, "reference_hash": null, "decimals": 18 }}' --accountId YOUR_ACCOUNT.near
 ```
 
 ## Important Notes
