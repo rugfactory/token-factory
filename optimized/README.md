@@ -71,6 +71,22 @@ Optimization flags:
 - `-Os`: Optimize for size
 - `-Oz`: Optimize aggressively for size
 
+### Strip Debug Symbols
+
+After optimization, you can further reduce the size by stripping debug symbols and non-essential data:
+
+For Factory Contract:
+```bash
+wasm-strip optimized/token_factory.wasm
+```
+
+For Token Contract:
+```bash
+wasm-strip optimized/token.wasm
+```
+
+> Note: wasm-strip is included in the WebAssembly Binary Toolkit (wabt). Stripping removes debug symbols and custom sections, which can significantly reduce file size but makes debugging more difficult. Make sure to keep an unstripped backup for debugging purposes.
+
 ## WASM/WAT Conversion
 
 ### Convert WASM to WAT
@@ -106,6 +122,9 @@ ls -lh contracts/factory/res/token_factory.wasm
 
 # Check optimized size
 ls -lh optimized/token_factory.wasm
+
+# Check stripped size
+ls -lh optimized/token_factory.wasm
 ```
 
 ## Important Notes
@@ -116,3 +135,4 @@ ls -lh optimized/token_factory.wasm
 4. Different optimization levels (-O1 to -O4) offer different trade-offs between size and speed
 5. The optimized folder will contain all processed files
 6. Relative paths in the commands assume you're in the project root directory
+7. Stripping debug symbols is irreversible - keep unstripped copies for debugging
