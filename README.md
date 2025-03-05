@@ -11,10 +11,12 @@ this repo is a fork of [https://github.com/near-examples/token-factory](https://
 
 
 RUGACTORY TOKEN FACTORY :: DEPLOYMENTS
-
+<br/>
+this contract is not currently depoyed.
+<br/>
 rtkn
-- rtkn.testnet
-- rtkn.near
+- ~~rtkn.testnet~~
+- ~~rtkn.near~~
 
 
 
