@@ -5,41 +5,41 @@ This guide focuses on deploying the pre-built Token Factory contract to rtkn.tes
 ## Testnet Deployment
 
 1. Login to your NEAR testnet account:
-   ```bash
+```bash
    near login
-   ```
+```
 
 2. Deploy the contract:
-   ```bash
+```bash
    near deploy --accountId rtkn.testnet --wasmFile res/token_factory.wasm
 
    near deploy rtkn.testnet --wasmFile optimized_build_contracts/factory/res/token_factory.wasm
-   ```
+```
 
 3. Initialize the contract:
-   ```bash
+```bash
    near call rtkn.testnet new '{}' --accountId rtkn.testnet
-   ```
+```
 
 ## Mainnet Deployment
 
 1. Login to your NEAR mainnet account:
-   ```bash
+```bash
    export NEAR_ENV=mainnet
    near login
-   ```
+```
 
 2. Deploy the contract:
-   ```bash
+```bash
    near deploy --accountId rtkn.near --wasmFile res/token_factory.wasm
 
    near deploy rtkn.near --wasmFile optimized_build_contracts/factory/res/token_factory.wasm
-   ```
+```
 
 3. Initialize the contract:
-   ```bash
+```bash
    near call rtkn.near new '{}' --accountId rtkn.near
-   ```
+```
 
 ## Storage Management
 
