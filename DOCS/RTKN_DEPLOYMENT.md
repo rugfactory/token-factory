@@ -11,7 +11,7 @@ This guide focuses on deploying the pre-built Token Factory contract to rtkn.tes
 
 2. Deploy the contract:
 ```bash
-   near deploy --accountId rtkn.testnet --wasmFile res/token_factory.wasm
+   near deploy rtkn.testnet --wasmFile contracts/factory/res/token_factory.wasm
 
    near deploy rtkn.testnet --wasmFile optimized_build_contracts/factory/res/token_factory.wasm
 ```
